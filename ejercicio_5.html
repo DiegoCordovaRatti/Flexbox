@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diego Córdova Ratti">
+
+    <!--Font Awesome 5.6.3-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- titulo -->
+    <title>Ejercicio 5</title>
+    <style>
+        body {
+            margin: 0;
+            height: auto;
+            padding: 0;
+        }
+
+        .main {
+            height: 100%;
+            width: 50%;
+            display: flex;
+        }
+
+        .main__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 30px;
+        }
+
+        
+
+        .main__image-container:nth-child(-n+4){
+            flex-basis: 20%;
+        }
+        .main__image-container:nth-child(5){
+            flex-basis: 100%;
+            height: auto;
+        }
+        .main__image-container:nth-child(2n+6){
+            flex-basis: 20%;
+            height: 200px;
+        }
+        .main__image-container:nth-child(2n+7){
+            flex-basis: 20%;
+            height: 300px;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!------------------- MAIN ---------------------->
+    <main class="main">
+        <div class="main__container">
+
+            <div class="main__image-container main__first-row">
+                <img src="https://picsum.photos/200" alt="" class="main__image">
+            </div>
+
+            <div class="main__image-container main__first-row">
+                <img src="https://picsum.photos/200" alt="" class="main__image">
+            </div>
+
+            <div class="main__image-container main__first-row">
+                <img src="https://picsum.photos/200" alt="" class="main__image">
+            </div>
+
+            <div class="main__image-container main__first-row">
+                <img src="https://picsum.photos/200" alt="" class="main__image">
+            </div>
+
+            <div class="main__image-container main__second-row">
+                <img src="https://picsum.photos/800/300" alt="" class="main__image main__image--wide">
+            </div>
+
+            <div class="main__image-container main__third-row">
+                <img src="https://picsum.photos/200" alt="" class="main__image">
+            </div>
+
+            <div class="main__image-container main__third-row">
+                <img src="https://picsum.photos/200/300" alt="" class="main__image main__image--high">
+            </div>
+
+            <div class="main__image-container main__third-row">
+                <img src="https://picsum.photos/200" alt="" class="main__image">
+            </div>
+
+            <div class="main__image-container main__third-row">
+                <img src="https://picsum.photos/200/300" alt="" class="main__image main__image--high">
+            </div>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
